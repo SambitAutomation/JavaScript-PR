@@ -11,14 +11,26 @@
 // console.log( typeof convNum);
 
 // Boolean Conversion
-let isCheck;
+// let isCheck;
 // isCheck = true;
 // isCheck = false;
 // isCheck = 1;
 // isCheck = 0;
 // isCheck = "";
 // isCheck = "true";
-isCheck = "false";
-let isConcCheck = Boolean(isCheck);
-console.log(isConcCheck);
-console.log(typeof isConcCheck);
+// isCheck = "false";
+// let isConcCheck = Boolean(isCheck);
+// console.log(isConcCheck);
+// console.log(typeof isConcCheck);
+
+// console.log("2" === "2");
+
+// console.log(null > 0);
+// console.log(null  == 0);
+// console.log(null >= 0);
+
+// console.log(undefined > 0);
+// console.log(undefined  == 0);
+// console.log(undefined >= 0);
+// console.log(undefined <= 0);
+// console.log(undefined ===  undefined);
