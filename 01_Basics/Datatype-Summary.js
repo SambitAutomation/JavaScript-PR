@@ -42,3 +42,25 @@ const newFunction = function(){
 }
 console.log(typeof newFunction); // function
 
+// Stack and Heap memory
+
+// Primitve Value will go to stack memory => Here we will get copy of the value
+// Non-Primitve Value will go to Heap memory =>  Here we will get reference of the value
+
+let primiValOne = "CheckIt";
+let primiValTwo = primiValOne;
+console.log(primiValTwo);
+
+primiValOne = "NotChecked";
+console.log(primiValOne);
+console.log(primiValTwo);
+
+let obj1 = {
+    email: "abc@abc.com"
+}
+
+let obj2 = obj1;
+obj2.email = "xyz@abc.com";
+console.log(obj1.email);
+console.log(obj2.email);
+// Here refernece will be passed & as obj2 is changing the value means obj1 value also will be changed
