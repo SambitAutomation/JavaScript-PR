@@ -39,3 +39,16 @@ const users = [
 ];
 
 console.log(users[3].email);
+
+
+// Object de-structure
+
+const course = {
+    courseName: "JS",
+    courseTutor: "Known",
+    fee: "Free"
+}
+
+const{courseTutor: Tutor} = course;
+
+console.log(Tutor); // Known
