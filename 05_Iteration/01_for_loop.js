@@ -127,3 +127,59 @@ let vals = myNums.filter((num) => {
 
 console.log(vals);
 
+
+// map() function for array
+
+const myNumbers = [ 1, 3, 4, 6, 7, 8];
+
+// let myNewNum = myNumbers.map((num) => num + 10);
+
+let myNewNum = myNumbers.map((num) => num  * 10)
+                        .map((num) => num  + 1)
+                        .filter((num) => num > 50);
+console.log(myNewNum);
+
+// reduce() function for array
+
+//basic example from MDN
+// const array1 = [1, 2, 3, 4];
+
+// // 0 + 1 + 2 + 3 + 4
+// const initialValue = 0;
+// const sumWithInitial = array1.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   initialValue,
+// );
+
+// console.log(sumWithInitial);
+// // Expected output: 10
+
+const rdArr = [ 2, 4, 6];
+
+//By using normal function
+let addRdArr = rdArr.reduce(function (acc, item){
+    return acc + item;
+}, 0);
+console.log(`Reduce result from normal function ${addRdArr}`);
+//By using arrow function
+let arrowResult = rdArr.reduce((acc, item) => (acc+item), 0);
+console.log(`Reduce result from arrow function ${arrowResult}`);
+
+const courseArr = [
+    {
+        language: "JAVA",
+        price: 10000
+    },
+    {
+        language: "JS",
+        price: 1000
+    },
+    {
+        language: "Angular",
+        price: 4500
+    },
+];
+
+const totalcoursePrice = courseArr.reduce((acc, item) => (acc + item.price), 0);
+
+console.log(`Reduce result from arrow function for Course Price for all  = ${totalcoursePrice}`);
