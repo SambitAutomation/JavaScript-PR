@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+    <ul class="language">
+        <li>JAVA</li>
+    </ul>
+
+    <script>
+        // Add New Element
+        function addNewLangEle(langName){
+            const li = document.createElement('li');
+            li.innerHTML = `${langName}`;
+            document.querySelector('.language').appendChild(li);
+        }
+    
+        addNewLangEle('JS');
+
+        function addOptimizeElement(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li);
+        }
+
+        addOptimizeElement('TS')
+        addOptimizeElement('GO')
+
+        // Edit an Element
+        // const secondLang = document.querySelector("li:nth-child(1)");
+        // const lang = document.querySelector("li:first-child");
+        const lang = document.querySelector("li:last-child");
+        // console.log(secondLang);
+        // secondLang.innerHTML = `JAVASCRIPT`;
+        const newLi = document.createElement('li');
+        newLi.textContent = `JAVASCRIPTs`;
+        lang.replaceWith(newLi)
+
+        // Delete an Element
+        const dlElmnt = document.querySelector("li:last-child");
+        dlElmnt.remove()
+
+    </script>
+</body>
+</html>
