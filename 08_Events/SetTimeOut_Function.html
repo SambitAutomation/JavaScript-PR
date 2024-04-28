@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Concept</title>
+</head>
+<body style="background-color: black; color: wheat;">
+    
+    <h1>Async Concepts</h1>
+    <button>Stop</button>
+
+    <script>
+       const settmOut =  function changeText(){
+        document.querySelector('h1').innerHTML = "SetTimeOut Function Called"
+       };
+
+      const timeOutCall = setTimeout(settmOut, 3000);
+
+      document.querySelector('button').addEventListener('click', function(){
+        clearTimeout(timeOutCall);
+        console.log('Clear Timeout called');
+      })
+
+    </script>
+</body>
+</html>

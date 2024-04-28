@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval Func</title>
+</head>
+<body style="background-color: black; color: wheat;">
+    <h1>SetInterval Function Practice</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        const setIntervalDate = function datePrint(){
+            document.querySelector('h1').innerHTML = `Sam ${Date.now()}`
+        }
+        let a;
+        let refOfInterval = function startIt(){
+           a =  setInterval(setIntervalDate, 1000);
+        }
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(a);
+        })
+
+        document.querySelector('#start').addEventListener('click', function(){
+            refOfInterval();
+        })
+    </script>
+</body>
+</html>
