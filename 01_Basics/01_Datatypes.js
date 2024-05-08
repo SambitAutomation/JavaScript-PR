@@ -7,7 +7,7 @@
 // Symbol
 
 
-// Primitive DataTypes
+// Non-Primitive DataTypes
 // object
 console.log(typeof null)
 console.log(typeof undefined)
