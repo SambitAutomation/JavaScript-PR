@@ -4,8 +4,8 @@ let dc_heros = [ "BatMan", "Flash", "SuperMan"];;
 // marvel_heros.push(dc_heros)
 // console.log(marvel_heros);  // ['IronMan','Thor', 'CaptainAmerica',[ 'BatMan', 'Flash', 'SuperMan' ]]
 
-// marvel_heros.concat(dc_heros)
-// console.log(marvel_heros);  // ['IronMan','Thor', 'CaptainAmerica',[ 'BatMan', 'Flash', 'SuperMan' ]]
+// let all_heroz = marvel_heros.concat(dc_heros)
+// console.log(all_heroz);  // ['IronMan','Thor', 'CaptainAmerica','BatMan', 'Flash', 'SuperMan' ]
 
 // Here we used Spread Operator
 // let all_heros = [...marvel_heros, ...dc_heros];
