@@ -20,7 +20,7 @@ console.log(myArr);
 // includes() => To check the element available in an array.. will return true/false accordingly
 console.log(myArr.includes(10));
 
-// includes() => To check the element available in an array.. will return the index accordingly otherwise return -1
+// indexOf() => To check the element available in an array.. will return the index accordingly otherwise return -1
 console.log(myArr.indexOf(4));
 
 //slice() => First parameter will be starting index & 2nd parameter will be end one which will be not included 
