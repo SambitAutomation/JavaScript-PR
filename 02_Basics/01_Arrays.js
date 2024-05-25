@@ -28,7 +28,7 @@ console.log(myArr.indexOf(4));
 console.log(myArr.slice(1,4));
 console.log(myArr);
 
-//slice() => First parameter will be starting index & 2nd parameter will be end one which will be included 
+//splice() => First parameter will be starting index & 2nd parameter will be end one which will be included 
 // It'll affect original array
 console.log(myArr.splice(1,4));
 console.log(myArr);
