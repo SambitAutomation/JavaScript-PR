@@ -63,8 +63,8 @@ const myObj = {
 }
 
 for(let key in myObj){
-    // console.log(key);
-    console.log(myObj[key]);
+    // console.log(key);  -> to get the keys of the object
+    console.log(myObj[key]);  // -> to get the values of the respective key from object
 }
 
 // for array checking
